@@ -1,6 +1,4 @@
-import java.lang.invoke.SwitchPoint;
 import java.text.ParseException;
-import java.text.SimpleDateFormat;
 import java.util.*;
 
 
@@ -115,11 +113,11 @@ public class Main {
 //        potenza.pow();
 
 
-//        Es classe Conto
-//        Conto conto = new Conto("Anna", 35000.59);
+//        Es classe es.Conto
+//        es.Conto conto = new es.Conto("Anna", 35000.59);
 //        conto.versamento(12000);
 //        conto.saldo();
-//        System.out.println(Conto.qtConti);
+//        System.out.println(es.Conto.qtConti);
 
 
 //        Es classe Auto
@@ -129,29 +127,10 @@ public class Main {
 //        System.out.println(auto.drive(600));
 
 //        Es classe studente
-//        Studente studente1 = new Studente("Anna", "06/03/2001");
-//        Studente studente2 = new Studente("Gianni", "25/08/2000");
+//        es.Studente studente1 = new es.Studente("Anna", "06/03/2001");
+//        es.Studente studente2 = new es.Studente("Gianni", "25/08/2000");
 //
-//        Studente.comparaDate(studente1, studente2);
-
-//        Es casello
-//        Si vuole scrivere un insieme di classi Java che consentano la gestione dei pedaggi di camion presso dei caselli autostradali.
-//        I camion devono pagare 5 dollari per ciascun asse piu' 10 dollari per ogni tonnellata di peso.
-//        Il casello deve raccogliere i pedaggi e visualizzandoli su video,
-//        inoltre periodicamente si dovranno visualizzare il numero di camion passati e l'incasso totale,
-//        e contestualmente tali dati dovranno essere azzerati.
-//        Individuazione delle classi necessarie a risolvere il problema
-
-        Truck truck1 = new Truck(3, 4568);
-        Casello casello = new Casello();
-        casello.calculateToll(truck1);
-        System.out.println(casello.getTotalIncome());
-        System.out.println(casello.getTrucksSinceCollection());
-        casello.checktruck();
-        System.out.println("quantità " + casello.getTrucksSinceCollection());
-        System.out.println("Income " + casello.getTotalIncome());
-
-
+//        es.Studente.comparaDate(studente1, studente2);
 
     }
 

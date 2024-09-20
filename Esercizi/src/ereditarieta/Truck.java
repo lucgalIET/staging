@@ -1,5 +1,5 @@
-//La classe Truck dovra' contenere i seguenti metodi:
-//- Truck (int axles, int totalWeight)
+package ereditarieta;//La classe model.Truck dovra' contenere i seguenti metodi:
+//- model.Truck (int axles, int totalWeight)
 //- int getAxles ()
 //- int getTotalWeight ()
 //e le variabili di istanza:

@@ -1,4 +1,4 @@
-//Realizzare la classe Studente che abbia due attributi:
+package es;//Realizzare la classe es.Studente che abbia due attributi:
 //nome
 //anno di nascita
 //Di tale classe si implementi i costruttore di default, quello parametrizzato, i metodi get, set ed il metodo toString.
@@ -39,7 +39,7 @@ public class Studente {
 
     @Override
     public String toString() {
-        return "Studente" +
+        return "es.Studente" +
                 "nome='" + nome + '\'' +
                 ", dataDiNascita='" + dataDiNascita + '\'';
     }

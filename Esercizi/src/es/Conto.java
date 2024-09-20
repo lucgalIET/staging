@@ -1,7 +1,5 @@
-//Creare una classe ContoCorrente in grado di simulare un conto corrente reale, quindi con versamenti, prelievi
+package es;//Creare una classe ContoCorrente in grado di simulare un conto corrente reale, quindi con versamenti, prelievi
 // , stampa saldo e dammi la lista degli ultimi 5 movimenti.
-
-import java.util.ArrayList;
 
 public class Conto {
     private double amount;
