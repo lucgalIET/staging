@@ -1,15 +1,4 @@
-package ereditarieta;//- TollBooth ()
-//- void calculateToll (model.Truck truck)
-//- void displayData ()
-//- void onReceiptCollection ()
-//e le variabili di istanza:
-//- int receiptsSinceCollection;
-//- int trucksSinceCollection;
-//I camion devono pagare 5 dollari per ciascun asse piu' 10 dollari per ogni tonnellata di peso.
-//Il casello deve raccogliere i pedaggi e visualizzandoli su video,
-//inoltre periodicamente si dovranno visualizzare il numero di camion passati e l'incasso totale,
-//e contestualmente tali dati dovranno essere azzerati.
-//Individuazione delle classi necessarie a risolvere il problema
+package ereditarieta;
 
 import java.util.Objects;
 
@@ -28,7 +17,7 @@ public class Casello {
 
     public int calculateToll(Truck truck){
        int cost4axels = 5 * truck.getAxels();
-       int cost4weight = Math.round(truck.getTotalWeight() / 1000) * 10;
+       int cost4weight = (int) (Math.round(truck.getPeso() / 1000) * 10);
        int totale = cost4weight + cost4axels;
        this.totalIncome += totale;
        this.receiptsSinceCollection++;
@@ -51,9 +40,8 @@ public class Casello {
     return numtruks;
     }
 
-    private int resetIncome() {
+    private void resetIncome() {
        int result = this.totalIncome = 0;
-       return result;
     }
 
     public int getTotalIncome() {

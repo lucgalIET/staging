@@ -6,17 +6,18 @@ public interface VeicoloInterface {
 //    non ha metodi concreti -> solo astratti (fino a java 8 [escluso])
 //    i metodi public abstract non ho il body
 
-    double siMuove();
-    VeicoloAbstract accelera(int x);
+    void avvia();
+    void ferma();
+
 
 
 //    java 8 ->
-    static void metodo() {
-        System.out.println("Ciao");
-    }
-
-    default void metodo2() {
-        System.out.println("Sono di default");
-    }
+//    static void metodo() {
+//        System.out.println("Ciao");
+//    }
+//
+//    default void metodo2() {
+//        System.out.println("Sono di default");
+//    }
 
 }

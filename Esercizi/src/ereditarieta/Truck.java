@@ -1,27 +1,61 @@
-package ereditarieta;//La classe model.Truck dovra' contenere i seguenti metodi:
-//- model.Truck (int axles, int totalWeight)
-//- int getAxles ()
-//- int getTotalWeight ()
-//e le variabili di istanza:
-//- int axles;
-//- int totalWeight;
+package ereditarieta;
 
+import java.util.Objects;
 
-public class Truck {
+public class Truck extends VeicoloAbstract implements VeicoloInterface{
 
     private int axels;
-    private int totalWeight;
+    boolean inMovement;
+    String alimentazione;
 
-    public Truck(int axels, int totalWeight) {
+
+    //    costruttori
+    public Truck(int axels) {
         this.axels = axels;
-        this.totalWeight = totalWeight;
     }
 
+    public Truck(double peso, String marca, String modello, int anno, String targa, String alimentazione, int axels) {
+
+        super(peso, marca, modello, anno, targa, alimentazione);
+        this.axels = axels;
+    }
+
+    //    getter & setter
     public int getAxels() {
         return axels;
     }
+    public void setAxels(int axels) {
 
-    public int getTotalWeight() {
-        return totalWeight;
+        this.axels = axels;
     }
+
+    //    hash & equals methods
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        Truck truck = (Truck) o;
+        return axels == truck.axels;
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hashCode(axels);
+    }
+
+
+//    override interface
+    @Override
+    public void avvia() {
+        this.inMovement = true;
+    }
+
+    @Override
+    public void ferma() {
+        this.inMovement = false;
+    }
+
+
+
+
 }

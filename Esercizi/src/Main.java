@@ -1,4 +1,6 @@
+import java.lang.invoke.SwitchPoint;
 import java.text.ParseException;
+import java.text.SimpleDateFormat;
 import java.util.*;
 
 
@@ -113,11 +115,11 @@ public class Main {
 //        potenza.pow();
 
 
-//        Es classe es.Conto
-//        es.Conto conto = new es.Conto("Anna", 35000.59);
+//        Es classe Conto
+//        Conto conto = new Conto("Anna", 35000.59);
 //        conto.versamento(12000);
 //        conto.saldo();
-//        System.out.println(es.Conto.qtConti);
+//        System.out.println(Conto.qtConti);
 
 
 //        Es classe Auto
@@ -127,10 +129,13 @@ public class Main {
 //        System.out.println(auto.drive(600));
 
 //        Es classe studente
-//        es.Studente studente1 = new es.Studente("Anna", "06/03/2001");
-//        es.Studente studente2 = new es.Studente("Gianni", "25/08/2000");
+//        Studente studente1 = new Studente("Anna", "06/03/2001");
+//        Studente studente2 = new Studente("Gianni", "25/08/2000");
 //
-//        es.Studente.comparaDate(studente1, studente2);
+//        Studente.comparaDate(studente1, studente2);
+
+
+
 
     }
 
