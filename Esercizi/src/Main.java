@@ -1,9 +1,11 @@
 import java.lang.invoke.SwitchPoint;
+import java.text.ParseException;
+import java.text.SimpleDateFormat;
 import java.util.*;
 
 
 public class Main {
-    public static void main(String[] args) {
+    public static void main(String[] args) throws ParseException {
         Scanner scanner = new Scanner(System.in);
 
 
@@ -106,6 +108,33 @@ public class Main {
 //        EsercizioCicli.diagonalSum();
 //        EsercizioCicli.position();
 //        EsercizioCicli.isSimmetric();
+
+//        Es classe potenza
+//        Potenza potenza = new Potenza(25);
+//        potenza.cambiaBase(3);
+//        potenza.pow();
+
+
+//        Es classe Conto
+//        Conto conto = new Conto("Anna", 35000.59);
+//        conto.versamento(12000);
+//        conto.saldo();
+//        System.out.println(Conto.qtConti);
+
+
+//        Es classe Auto
+//        Auto auto = new Auto("bmw", 15.4);
+//        auto.rifornimento(30);
+//        System.out.println(auto.dammiCarburante());
+//        System.out.println(auto.drive(600));
+
+//        Es classe studente
+        Studente studente1 = new Studente("Anna", "06/03/2001");
+        Studente studente2 = new Studente("Gianni", "25/08/2000");
+
+        Studente.comparaDate(studente1, studente2);
+
+
     }
 
 
